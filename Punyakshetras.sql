@@ -2,17 +2,17 @@ CREATE DATABASE PunyakshetrasDB;
 
 USE PunyakshetrasDB;
 
-CREATE TABLE SacredTemples(
-	SN INT,
-    Temple_Name VARCHAR(100) NOT NULL,
-    Location VARCHAR(100) NOT NULL,
-    State VARCHAR(100),
-    Deity VARCHAR(100),
-    Description TEXT,
-    BuiltBy varchar(100)
+CREATE TABLE sacred_temples(
+	sn INT,
+    temple_name VARCHAR(100) NOT NULL,
+    location VARCHAR(100) NOT NULL,
+    state VARCHAR(100),
+    deity VARCHAR(100),
+    description TEXT,
+    builtby varchar(100)
 );
 
-INSERT INTO SacredTemples(SN, Temple_Name, Location, State, Deity, Description, BuiltBy)
+INSERT INTO sacred_temples(sn, temple_name, location, state, deity, description, builtby)
 VALUES
 	(1, 'Kedarnath', 'Rudraprayag', 'Uttarkhand', 'Lord Shiva', 'One of the 12 Jyothirlingas located in Himalayas', 'Pandavas'),
     (2, 'Kashi Vishwanath', 'Varanasi','Uttarpradesh', 'Lord Shiva', 'One of the 12 Jyothirlingas on the banks of the Ganges, dedicated to Shiva.', 'Ahilyabai Holkar'),
